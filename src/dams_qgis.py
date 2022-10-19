@@ -73,7 +73,7 @@ repro_hydro_rivers = reproject_crs(clipped_hydro_rivers['OUTPUT'],'EPSG:32618')
 repro_geodar_dam = reproject_crs(clipped_geodar_dams['OUTPUT'],'EPSG:32618')
 repro_geodar_res = reproject_crs(clipped_geodar_res['OUTPUT'],'EPSG:32618')
 #add layer to map for visual verify
-QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
+#QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_hydro_rivers['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_geodar_dam['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_geodar_res['OUTPUT'])
@@ -81,6 +81,7 @@ QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
 #buffer geodar dams 
 buff_geodar_dams = buff_points(2000,repro_geodar_dam['OUTPUT'])
 QgsProject.instance().addMapLayer(buff_geodar_dams['OUTPUT'])
+QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
 #location query
 processing.run('qgis:selectbylocation',
     {'INPUT': repro_dams_on['OUTPUT'],
@@ -88,8 +89,20 @@ processing.run('qgis:selectbylocation',
     'INTERSECT': buff_geodar_dams['OUTPUT'],
     'METHOD':0}
     )
+print('Count:',
+repro_dams_on['OUTPUT'].selectedFeatureCount())
 #delete duplicates 
 repro_dams_on['OUTPUT'].startEditing()
 repro_dams_on['OUTPUT'].deleteSelectedFeatures()
+repro_dams_on['OUTPUT'].deleteAttributes([9])
 repro_dams_on['OUTPUT'].commitChanges()
+#merge old with new
+shapefile_list = [repro_dams_on['OUTPUT'],repro_geodar_dam['OUTPUT']]
+print(shapefile_list)
+
+merge_on = processing.run('native:mergevectorlayers',
+    {'LAYERS': shapefile_list,
+    'OUTPUT':'memory:Deduplipcated' }
+    )
+QgsProject.instance().addMapLayer(merge_on['OUTPUT'])
 print("%s seconds" % (time.time() - start_time))
