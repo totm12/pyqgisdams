@@ -12,6 +12,8 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 5. [Discussion](#Discussion)
 6. [Conclusion](#Conclusion)
 7. [References](#References)
+8. [Appendix A](#Appendix A)
+9. [Appendix B](#Appendix B)
 
 ## Introduction
 Adapting the reverse site selection of the GeoDAR dataset/Perry's paper to pyQGIS and expanding (?).
@@ -74,5 +76,8 @@ There are some minor annoyances:
 ## References
 > J. Wang, B. A. Walter, F. Yao, C. Song, M. Ding, A. S. Maroof, J. Zhu, C. Fan, J. M. McAlister, M. S. Sikder, Y. Sheng, G. H. Allen, J.-F. Crétaux, and Y. Wada, “Geodar: Georeferenced global dams and reservoirs dataset for bridging attributes and geolocations,” Zenodo [Online]. Available: https://zenodo.org/record/6163413#.YsUIJezMIjg. [Accessed: 12-Sept-2022].
 
+## Appendix A: Maps and Charts
+
+## Appendix B: Data Sources and Documentation
 
 
