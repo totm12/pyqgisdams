@@ -30,25 +30,11 @@ The primary objective of this directed study is to adapt the current semi-automa
 
 ![Figure 1](./img/Model_to_code.png)
 
-*Figure 1*
+*Figure 1: ArcGIS Pro Model Builder for GeoDAR v1.1*
 
 ## Methodology
 
-If you're a mac user and you have conda and brew installed, run the following in your terminal to install and generate the example outputs:
-```bash
-# get texlive
-brew install --cask mactex
-
-# update tlmgr and packages
-sudo tlmgr update --self
-
-# make python venv and install pandoc
-conda create -n phd -y python=3.7 pandoc
-conda activate phd
-
-# Install required python and texlive packages
-make install
-```
+The brunt of this project was to convert the current semi-automated model-builder approach to a scriptable format for easier automation capabilities, future scalability, and quality of life upgrades regarding minimizing GUI interaction. The model-based logic and geo-processing tools used previously in ArcGIS Pro will be converted using the QGIS toolset. A script will be uploaded and shared publicly once completed, with appropriate documentation, so that anyone who wishes to explore it for themselves, can do so; thereby increasing the potential for citizen scientists to record their own dam data. Once adapted, accuracy will first look to be replicated in the original region of study by cross comparing methods of replicant removal and overall region accuracy, before attempting to expand further and possibly improve accuracy by applying a geodesic buffering (Flater, n.d.) or similar algorithmic approach (tanawatl, 2016) to a new study area/catchment. This method ensures that an adequate level of open-source outreach and accessibility is still achieved, whilst still allowing for the potential improvement of accuracy to pre-existing methods if a more accurate technique is encountered during the duration of the study.
 
 ## Application
 
