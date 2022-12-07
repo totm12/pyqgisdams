@@ -78,6 +78,8 @@ There are some minor annoyances:
 
 ## Appendix A: Maps and Charts
 
+![Figure 1](./img/Ottawa_Basin_01.png)
+
 ## Appendix B: Data Sources and Documentation
 
 
