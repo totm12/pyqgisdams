@@ -18,7 +18,7 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 ## Introduction
 Adapting the reverse site selection of the GeoDAR dataset/Perry's paper to pyQGIS and expanding (?).
 
-This repository provides a framework for the semi-autonomous implemetation of the dedeuplication by proximity methodology proposed in:
+This repository provides a framework for the semi-autonomous implemetation in Python of the dedeuplication by proximity methodology proposed in:
 >Godse, P. (2022). Improving Dam Datasets To Identify Micro-hydro Suitibility: Spatial Data Driven Approach. GEOM4005: Undergraduate Directed Study In Geomatics, Carleton University, student paper.
 
 ## Objectives
