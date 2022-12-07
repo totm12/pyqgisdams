@@ -78,11 +78,17 @@ There are some minor annoyances:
 
 ## Appendix A: Maps and Charts
 
-Figure 1:
+**Figure 1:**
 ![Figure 1](./img/Ottawa_Basin_01.png)
 
-Figure 2:
-![Figure 2](./img/Mekong_Basin_Harmony_01.png)
+**Figure 2:**
+![Figure 2](./img/Ottawa_Basin_Harmony_01.png)
+
+**Figure 3:**
+![Figure 3](./img/Mekong_Basin_01.png)
+
+**Figure 4:**
+![Figure 4](./img/Mekong_Basin_Harmony_01.png)
 
 ## Appendix B: Data Sources and Documentation
 
