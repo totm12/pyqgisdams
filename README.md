@@ -6,9 +6,12 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 
 ## Table of Contents
 1. [Introduction](#Introduction)
-<!--2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)-->
+2. [Objectives](#Objectives)
+3. [Methodology](#Methodology)
+4. [Application](#Application)
+5. [Discussion](#Discussion)
+6. [Conclusion](#Conclusion)
+7. [References](#References)
 
 ## Introduction
 Adapting the reverse site selection of the GeoDAR dataset/Perry's paper to pyQGIS and expanding (?).
