@@ -56,14 +56,7 @@ There are some minor annoyances:
 
 ## Conclusion
 
-- README.md => these instructions.
-- License.md => terms of reuse (MIT license).
-- Makefile => contains instructions for using Pandoc to produce the final thesis.
-- output/ => directory to hold the final version.
-- source/ => directory to hold the thesis content. Includes the references.bib file.
-- scratch/ => directory to hold tables which can be converted between different formats.
-- source/figures/ => directory to hold the figures.
-- style/ => directory to hold the style documents.
+For this project the harmonization between two regionally independent datasets, in conjunction with GeoDAR v1.1 was completed; in the Mekong Basin and the Outaouais Basin, whilst the subsequent analysis of the manually observed distance of the latter two allowed for confirmation that the distance of 2km is not causing unneeded error. Utilizing the deduplication by proximity methodology and supporting script, GeoDARs dam counts were consequently improved from 105 to 159 points in the Mekong Basin and 56 to 271 within the Outaouais Basin. By applying varying buffering proximities at increments of 0.5 km on each iteration via the QGIS script, I was able to confirm that the optimal buffering distance without introducing more unwanted errors is 2km or 2000m.
 
 ## References
 
