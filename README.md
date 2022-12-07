@@ -64,6 +64,11 @@ For this project the harmonization between two regionally independent datasets, 
 
 >Godse, P. (2022). Improving Dam Datasets To Identify Micro-hydro Suitibility: Spatial Data Driven Approach. GEOM4005: Undergraduate Directed Study In Geomatics, Carleton University, student paper.
 
+>Flater, D. Understanding Geodesic Buffering. (n.d.). Available: https://www.esri.com/news/arcuser/0111/geodesic.html. [Accessed 18-Oct-2022].
+
+>tanawatl. (2016, February 3). For which real world data sets does DBSCAN surpass K-means.? [Forum post]. Data Science Stack
+Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 25-Sept-2022].
+
 >Repositories. (n.d.). GitHub Docs. Available: https://ghdocs-prod.azurewebsites.net/en/repositories. [Accessed: 25-Sept-2022].
 
 ## Appendix A: Maps and Charts
