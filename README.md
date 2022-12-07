@@ -29,6 +29,7 @@ Whilst attempting to reduce the number of barriers to access or use this data as
 The primary objective of this directed study is to adapt the current semi-automated model-based approach to an automated open-sourced script that can be run from the command line or QGIS. The current ArcPro model-builder illustation can be seen in Figure 1. Additionally, by providing a script as a deliverable, it will become easier to disseminate upon completion, via the establishment of an openly accessible repository on GitHub or a similar service. The goal is to produce a publicly available, easily accessible script that can be ran from QGIS or the CLI and stored within a GitHub repository (Repositories, n.d.) or similar.
 
 ![Figure 1](./img/Model_to_code.png)
+
 *Figure 1*
 
 ## Methodology
