@@ -82,13 +82,12 @@ def layer_merge(lyr_list):
     
 start_time = time.time()
 #Set input and output file paths
-on_dam_path = r"M:\School\4YP3\DS\Data\Ontario_Dam_Inventory\Ontario_Dam_Inventory.shp"
+on_dam_path = r"M:\School\4YP3\DS\Data\ADPC-Dams_final_forBasemap\Dams_final_forBasemap.shp"
 hydro_rivers_path = r"M:\School\4YP3\DS\Data\HydroRIVERS_v10_shp\HydroRIVERS_v10_shp\HydroRIVERS_v10.shp"
 geodar_dams_path = r"M:\School\4YP3\DS\Data\GeoDAR_v10_v11\GeoDAR_v10_v11\GeoDAR_v11_dams.shp"
 geodar_res_path = r"M:\School\4YP3\DS\Data\GeoDAR_v10_v11\GeoDAR_v10_v11\GeoDAR_v11_reservoirs.shp"
-basin_clip_path = r"M:\School\4YP3\DS\Data\Proper_Ottawa_Basin.geojson"
-out_path = r"M:\School\4YP3\DS\Data\clipped_dams.shp"
-out_pathb = r"M:\School\4YP3\DS\Data\buffed_.shp"
+basin_clip_path = r"M:\School\4YP3\DS\Data\mekong_basin_v1.geojson"
+
 
 #clip to match regional basin
 clipped_dams_on = clipping(on_dam_path,basin_clip_path)
@@ -101,18 +100,20 @@ clipped_geodar_res = clipping(geodar_res_path,basin_clip_path)
 #QgsProject.instance().addMapLayer(clipped_geodar_res['OUTPUT'])
 
 #reproject layers to match regional CRS
-repro_dams_on = reproject_crs(clipped_dams_on['OUTPUT'],'EPSG:32618')
-repro_hydro_rivers = reproject_crs(clipped_hydro_rivers['OUTPUT'],'EPSG:32618')
-repro_geodar_dam = reproject_crs(clipped_geodar_dams['OUTPUT'],'EPSG:32618')
-repro_geodar_res = reproject_crs(clipped_geodar_res['OUTPUT'],'EPSG:32618')
+repro_dams_on = reproject_crs(clipped_dams_on['OUTPUT'],'EPSG:32648')#32618')
+repro_hydro_rivers = reproject_crs(clipped_hydro_rivers['OUTPUT'],'EPSG:32648')#32618')
+repro_geodar_dam = reproject_crs(clipped_geodar_dams['OUTPUT'],'EPSG:32648')#32618')
+repro_geodar_res = reproject_crs(clipped_geodar_res['OUTPUT'],'EPSG:32648')#32618')
 #add layer to map for visual verify
 #QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_hydro_rivers['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_geodar_dam['OUTPUT'])
 #QgsProject.instance().addMapLayer(repro_geodar_res['OUTPUT'])
 
-#buffer geodar dams 
-buff_geodar_dams = buff_points(2000,repro_geodar_dam['OUTPUT'])
+#buffer geodar dams
+#NOTE: Buffer distance must be set in Meters
+buff_dist = 2000
+buff_geodar_dams = buff_points(buff_dist,repro_geodar_dam['OUTPUT'])
 QgsProject.instance().addMapLayer(buff_geodar_dams['OUTPUT'])
 QgsProject.instance().addMapLayer(repro_dams_on['OUTPUT'])
 
@@ -123,5 +124,5 @@ on_count,repro_dams_on['OUTPUT'] = query_count(repro_dams_on['OUTPUT'],buff_geod
 shapefile_list = [repro_dams_on['OUTPUT'],repro_geodar_dam['OUTPUT']]
 merged_data = layer_merge(shapefile_list)
 QgsProject.instance().addMapLayer(merged_data['OUTPUT'])
-print('Count:',on_count,'duplicate features within a 2km buffer.')
+print('Count:',on_count,'duplicate features within a {}km buffer.'.format(buff_dist/1000))
 print("%s seconds" % (time.time() - start_time))
