@@ -56,7 +56,15 @@ There are some minor annoyances:
 
 ## Conclusion
 
-For this project the harmonization between two regionally independent datasets, in conjunction with GeoDAR v1.1 was completed; in the Mekong Basin and the Outaouais Basin, whilst the subsequent analysis of the manually observed distance of the latter two allowed for confirmation that the distance of 2km is not causing unneeded error. Utilizing the deduplication by proximity methodology and supporting script, GeoDARs dam counts were consequently improved from 105 to 159 points in the Mekong Basin and 56 to 271 within the Outaouais Basin. By applying varying buffering proximities at increments of 0.5 km on each iteration via the QGIS script, I was able to confirm that the optimal buffering distance without introducing more unwanted errors is 2km or 2000m.
+For this project the harmonization between two regionally independent datasets, in conjunction with GeoDAR v1.1 was completed; in the Mekong Basin and the Outaouais Basin, whilst the subsequent analysis of the manually observed distance of the latter two allowed for confirmation that the distance of 2km is not causing unneeded error. Utilizing the deduplication by proximity methodology and supporting script, GeoDARs dam counts were consequently improved from 105 to 159 points in the Mekong Basin and 56 to 271 within the Outaouais Basin. By applying varying buffering proximities at increments of 0.5 km on each iteration via the QGIS script, I was able to confirm that the optimal buffering distance without introducing more unwanted errors is 2km or 2000m. The corresponding plots for Outaouais and Mekong can be seen in Figure 4,5.
+
+![Figure 4](./img/Ottawa_varying_buffer.png)
+
+*Figure 4: Showing buffering proximities at increasing increments of 0.5km within the Outaouais Basin*
+
+![Figure 5](./img/Mekong_varying_buffer.png)
+
+*Figure 5: Showing buffering proximities at increasing increments of 0.5km within the Mekong Basin*
 
 ## References
 
