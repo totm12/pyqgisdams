@@ -36,9 +36,9 @@ Whilst attempting to reduce the number of barriers to access or use this data as
 
 The primary objective of this directed study is to adapt the current semi-automated model-based approach to an automated open-sourced script that can be run from the command line or QGIS. The current ArcPro model-builder illustation can be seen in Figure 1. Additionally, by providing a script as a deliverable, it will become easier to disseminate upon completion, via the establishment of an openly accessible repository on GitHub or a similar service. The goal is to produce a publicly available, easily accessible script that can be ran from QGIS or the CLI and stored within a GitHub repository (Repositories, n.d.) or similar.
 
-![Figure 1](./img/Model_to_code.png)
+![Figure 3](./img/Model_to_code.png)
 
-*Figure 1: ArcGIS Pro Model Builder for GeoDAR v1.1*
+*Figure 3: ArcGIS Pro Model Builder for GeoDAR v1.1*
 
 ## Methodology
 
@@ -46,21 +46,15 @@ The brunt of this project was to convert the current semi-automated model-builde
 
 ## Application
 
-Markdown is a super-friendly plain text format that can be easily converted to a bunch of other formats like PDF, Word and LaTeX. You'll enjoy working in Markdown because:
-- it is a clean, plain-text format...
-- ...but you can use LaTeX when you need it (for example, in laying out mathematical formula).
-- it doesn't suffer from the freezes and crashes that some of us experience when working with large, image-heavy Word documents.
-- it automatically handles the table of contents, bibliography etc with Pandoc.
-- comments, drafts of text, etc can be added to the document by wrapping them in &lt;!--  --&gt;
-- it works well with Git, so keeping backups is straightforward. Just commit the changes and then push them to your repository.
-- it is able to take advantage of autocompletion capabilities for figures and citations in several text editors (VSCode, Sublime, etc.)
-- there is no lock-in. If you decide that Markdown isn't for you, then just output to Word, or whatever, and continue working in the new format.
+The harmonization process begins with qsetting the script inputs and outputs to match the reigion your wokring in. For the Mekong basin the shapefile for the basin is set, same for the dams (GeoDAR and ADCP), and lastly the HydroRivers shapefile path is set. Next, the laeyrs using the clip layer tool against all the input data shown in figure 3. From this first step, 159 ADPC dams, 105 GeoDAR dams, 3260 km2 of reservoir and 66284 hydro river polylines are within the region. Due to the impedance geo-referencing in GeoDAR, a proximal analysis is performed.
+
+The second step is to visualize the data in ArcGIS Pro and to view whether there is an abundance of duplicates, such that 36 GeoDAR dams are duplicates. Notably, there appears to be unique and unaccounted dams within both datasets, which are accounted in harmonization. To deduplicate, GeoDAR dams are selected within a 2km buffer of ADPC dams. The buffer is selected as a manual, region specific filter based on manual observation within the ArcGIS Pro environment. The buffer is derived manually by verifying 0.5 km, 1.0 km, 2.0 km, and 3.0 km buffers where the number of duplicates increased only from 0.5km and 1.0 km buffer but did not change from 2.0 km to as large as 10 km thus, 2km was selected as an acceptable range for the study. As a result of merging both dam datasets, 228 unique dams are now accounted within the region.
+
+When merging the two files; ADPC and GeoDAR v1.1, it’s crucial to pay attention to the right merge relationship to avoid compiling encoded or interpolated data and to include the most useful attributes. For this reason, GeoDAR is harmonized with ADPC to facilitate future geocoding based on ADPC attributes. As a result, there is a 217% increase in harmonization and a 34% decrease relative to GeoDARv1.1 in the Mekong Basin before being merged into the ADPC dam count.
 
 ## Discussion
 
-There are some minor annoyances:
-- if you haven't worked with Markdown before then you'll find yourself referring to the style-guide fairly often at first.
-- it isn't possible to add a short caption to tables ~~and figures~~ ([figures are now fixed](https://github.com/tompollard/phd_thesis_markdown/pull/47), thanks to @martisak). This means that /listoftables includes the long-caption, which probably isn't what you want. If you want to include the list of tables, then you'll need to write it manually.
+Initially, the hypothesis for this study involved iteratively testing different buffering proxies to harmonize the dataset based on varying distances to ascertian if they were inroducing uneeded error. However, it became apperant quickly that the 
 
 ## Conclusion
 
@@ -90,19 +84,31 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 ## Appendix A: Maps and Charts
 
 **Figure 1:**
-![Figure 1](./img/Model_to_code.png)
-
-**Figure 1:**
-![Figure 1](./img/Ottawa_Basin_01.png)
+![Figure 1](./img/GeoDAR_flow.png)
 
 **Figure 2:**
-![Figure 2](./img/Ottawa_Basin_Harmony_01.png)
+![Figure 2](./img/GeoDAR_flow_2.png)
 
 **Figure 3:**
-![Figure 3](./img/Mekong_Basin_01.png)
+![Figure 3](./img/Model_to_code.png)
 
 **Figure 4:**
-![Figure 4](./img/Mekong_Basin_Harmony_01.png)
+![Figure 4](./img/Ottawa_varying_buffer.png)
+
+**Figure 5:**
+![Figure 5](./img/Mekong_varying_buffer.png)
+
+**Figure 6:**
+![Figure 6](./img/Ottawa_Basin_01.png)
+
+**Figure 7:**
+![Figure 7](./img/Ottawa_Basin_Harmony_01.png)
+
+**Figure 8:**
+![Figure 8](./img/Mekong_Basin_01.png)
+
+**Figure 9:**
+![Figure 9](./img/Mekong_Basin_Harmony_01.png)
 
 <!--## Appendix B: Data Sources and Documentation-->
 
