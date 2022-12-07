@@ -21,6 +21,7 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 
 Dams and water resources have become a quintessential part of modern society, with an ever-growing reliance on them to support our complex infrastructures. As resources wain and begin to decrease many of the world’s governments and top scientists have collaborated with the objective to better increase dam data on a global scale. Some current efforts include: World Registers of Dams (WRD), GRanD national inventories, GOODD, and ICOLD. From these initial datasets the idea for GeoDAR v1.1 was conceived with the notion of harmonizing global dam data across regions. GeoDAR v1.1’s methodology is demonstrated in Figure 1 and Figure 2 (Wang et al., 2022). The method to harmonize GeoDAR v1.1 is conceived such that an inverse geospatial analysis is tested and verified by updating the Mekong Basin’s regional dataset, then subsequently employed in the Outaouais Basin (Godse, 2022). This repository provides a framework for the semi-autonomous implemetation in Python of the dedeuplication by proximity methodology proposed in:
 >Godse, P. (2022). Improving Dam Datasets To Identify Micro-hydro Suitibility: Spatial Data Driven Approach. GEOM4005: Undergraduate Directed Study In Geomatics, Carleton University, student paper.
+
 ![Figure 1](./img/GeoDAR_flow.png)
 
 *Figure 1: GeoDAR V1.1 Geospatial Model figure 6. Adopted from Wang et al., 2022*
