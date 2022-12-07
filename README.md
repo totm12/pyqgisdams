@@ -12,7 +12,7 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 5. [Discussion](#Discussion)
 6. [Conclusion](#Conclusion)
 7. [References](#References)
-8. [Appendix A: Maps and Charts](#AppendixA:MapsandCharts)
+8. [Appendix A: Maps and Charts](#Appendix A: Maps and Charts)
 9. [Appendix B: Data Sources and Documentation](#AppendixB:DataSourcesandDocumentation)
 
 ## Introduction
