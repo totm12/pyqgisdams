@@ -24,7 +24,7 @@ Dams and water resources have become a quintessential part of modern society, wi
 
 *Figure 1: GeoDAR V1.1 Geospatial Model figure 6. Adopted from Wang et al., 2022*
 
-![Figure 2](./img/GeoDAR_flow2.png)
+![Figure 2](./img/GeoDAR_flow_2.png)
 
 *Figure 2: GeoDAR v1.0 and GeoDAR v1.1 figure 5 Georeferenced Model. Adopted from Wang et al., 2022*
 
