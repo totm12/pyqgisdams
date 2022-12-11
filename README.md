@@ -21,15 +21,12 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 ## Repo Structure
 ```
 pyqgisdams
-│   README.md    
+│   README.md (You are here)    
 │
 └───img
-│   │   Contains all images used within repo.
-│
-│
-│   
+│   │   Contains all images used within this repo.
 └───src
-    │   Contains dams_qgis.py for use in QGIS as well a user-guide.
+    │   Contains dams_qgis.py for use in QGIS as well the user-guide.
 ```
 
 ## Introduction
