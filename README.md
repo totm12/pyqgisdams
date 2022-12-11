@@ -36,9 +36,17 @@ Whilst attempting to reduce the number of barriers to access or use this data as
 
 The primary objective of this directed study is to adapt the current semi-automated model-based approach to an automated open-sourced script that can be run from the command line or QGIS. The current ArcPro model-builder illustation can be seen in Figure 1. Additionally, by providing a script as a deliverable, it will become easier to disseminate upon completion, via the establishment of an openly accessible repository on GitHub or a similar service. The goal is to produce a publicly available, easily accessible script that can be ran from QGIS or the CLI and stored within a GitHub repository (Repositories, n.d.) or similar.
 
-![Figure 3](./img/Model_to_code.png)
+![Figure 3](./img/Perry_Model_chart_q.png)
 
-*Figure 3: ArcGIS Pro Model Builder for GeoDAR v1.1*
+*Figure 3: Diagram for harmonization of dam datasets using deduplication by proximity. Adopted from Godse, P. (2022)*
+
+![Figure 4](./img/Perry_Model_chart_on.png)
+
+*Figure 4: Diagram for harmonization of dam datasets using deduplication by proximity. Adopted from Godse, P. (2022)*
+
+![Figure 5](./img/Model_to_code.png)
+
+*Figure 5: ArcGIS Pro Model Builder for GeoDAR v1.1. Adopted from Godse, P. (2022)*
 
 ## Methodology
 
@@ -48,7 +56,7 @@ The brunt of this project was to convert the current semi-automated model-builde
 
 The harmonization process begins with qsetting the script inputs and outputs to match the reigion your working in. For the Mekong basin the shapefile for the basin is set, same for the dams (GeoDAR and ADCP), and lastly the HydroRivers shapefile path is set. Next, the layers are reprojeced to their local UTM zone to reduce error from datums. Next using the clip layer tool against all the aforementioned input data shown. From this first step, 159 ADPC dams, 105 GeoDAR dams, 3260 km2 of reservoir and 66284 hydro river polylines are within the region. Due to the impedance geo-referencing in GeoDAR, a proximal analysis is performed.
 
-The second step is to visualize the data in QGIS and to view whether there is an abundance of duplicates, such that 36 GeoDAR dams are duplicates. Notably, there appears to be unique and unaccounted dams within both datasets, which are accounted in harmonization. To deduplicate, GeoDAR dams are selected within a 2km buffer of ADPC dams. The buffer is selected as a manual, region specific filter based on manual observation within the ArcGIS Pro environment. The buffer is derived manually by verifying 2.0-10.0km buffers where the number of duplicates increased only from 0.5km and 1.0 km buffer but did not change from 2.0 km to as large as 10 km thus, 2km was selected as an acceptable range for the study. As a result of merging both dam datasets, 228 unique dams are now accounted within the region.
+The second step is to visualize the data in QGIS and to view whether there is an abundance of duplicates, such that 36 GeoDAR dams are duplicates. Notably, there appears to be unique and unaccounted dams within both datasets, which are accounted in harmonization. To deduplicate, GeoDAR dams are selected within a 2km buffer of ADPC dams. The buffer is selected as a manual, region specific filter based on manual observation within QGIS. The buffer is derived manually by verifying 2.0-10.0km buffers where the number of duplicates increased only from 0.5km and 1.0 km buffer but did not change from 2.0 km to as large as 10 km thus, 2km was selected as an acceptable range for the study. As a result of merging both dam datasets, 228 unique dams are now accounted within the region.
 
 When merging the two files; ADPC and GeoDAR v1.1, it’s crucial to pay attention to the right merge relationship to avoid compiling encoded or interpolated data and to include the most useful attributes. For this reason, GeoDAR is harmonized with ADPC to facilitate future geocoding based on ADPC attributes. As a result, there is a 217% increase in harmonization and a 34% decrease relative to GeoDARv1.1 in the Mekong Basin before being merged into the ADPC dam count.
 
@@ -60,13 +68,13 @@ Initially, the hypothesis for this study involved iteratively testing different 
 
 For this project the harmonization between two regionally independent datasets, in conjunction with GeoDAR v1.1 was completed; in the Mekong Basin and the Outaouais Basin, whilst the subsequent analysis of the manually observed distance of the latter two allowed for confirmation that the distance of 2km is not causing unneeded error. Utilizing the deduplication by proximity methodology and supporting script, GeoDARs dam counts were consequently improved from 105 to 159 points in the Mekong Basin and 56 to 271 within the Outaouais Basin. By applying varying buffering proximities at increments of 0.5 km on each iteration via the QGIS script, I was able to confirm that the optimal buffering distance without introducing more unwanted errors is 2km or 2000m. The corresponding plots for Outaouais and Mekong can be seen in Figures 4,5. There seems to be a linear relationship between the increasing buffering proxies and duplicate features, whereas in the Mekong basin, any attempts to model it linearly are significantly inaccurate.
 
-![Figure 4](./img/Ottawa_varying_buffer.png)
+![Figure 6](./img/Ottawa_varying_buffer.png)
 
-*Figure 4: Showing buffering proximities at increasing increments of 0.5km within the Outaouais Basin*
+*Figure 6: Showing buffering proximities at increasing increments of 0.5km within the Outaouais Basin*
 
-![Figure 5](./img/Mekong_varying_buffer.png)
+![Figure 7](./img/Mekong_varying_buffer.png)
 
-*Figure 5: Showing buffering proximities at increasing increments of 0.5km within the Mekong Basin*
+*Figure 7: Showing buffering proximities at increasing increments of 0.5km within the Mekong Basin*
 
 ## References
 
@@ -97,26 +105,32 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 **Figure 2:**
 ![Figure 2](./img/GeoDAR_flow_2.png)
 
-**Figure 3:**
-![Figure 3](./img/Model_to_code.png)
+**Figure 3**
+![Figure 3](./img/Perry_Model_chart_q.png)
 
-**Figure 4:**
-![Figure 4](./img/Ottawa_varying_buffer.png)
+**Figure 4**
+![Figure 4](./img/Perry_Model_chart_on.png)
 
 **Figure 5:**
-![Figure 5](./img/Mekong_varying_buffer.png)
+![Figure 5](./img/Model_to_code.png)
 
 **Figure 6:**
-![Figure 6](./img/Ottawa_Basin_01.png)
+![Figure 6](./img/Ottawa_varying_buffer.png)
 
 **Figure 7:**
-![Figure 7](./img/Ottawa_Basin_Harmony_01.png)
+![Figure 7](./img/Mekong_varying_buffer.png)
 
 **Figure 8:**
-![Figure 8](./img/Mekong_Basin_01.png)
+![Figure 8](./img/Ottawa_Basin_01.png)
 
 **Figure 9:**
-![Figure 9](./img/Mekong_Basin_Harmony_01.png)
+![Figure 9](./img/Ottawa_Basin_Harmony_01.png)
+
+**Figure 10:**
+![Figure 10](./img/Mekong_Basin_01.png)
+
+**Figure 11:**
+![Figure 11](./img/Mekong_Basin_Harmony_01.png)
 
 <!--## Appendix B: Data Sources and Documentation-->
 
