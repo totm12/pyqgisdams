@@ -105,10 +105,10 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 **Figure 2:**
 ![Figure 2](./img/GeoDAR_flow_2.png)
 
-**Figure 3**
+**Figure 3:**
 ![Figure 3](./img/Perry_Model_chart_q.png)
 
-**Figure 4**
+**Figure 4:**
 ![Figure 4](./img/Perry_Model_chart_on.png)
 
 **Figure 5:**
