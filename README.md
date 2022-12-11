@@ -24,7 +24,7 @@ pyqgisdams
 │   README.md (You are here)    
 │
 └───img
-│   │   Contains all images used within this repo.
+│   │   Contains all images used within this repository.
 └───src
     │   Contains dams_qgis.py for use in QGIS as well the user-guide.
 ```
