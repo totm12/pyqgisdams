@@ -15,7 +15,7 @@ HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by 
 6. [Conclusion](#Conclusion)
 7. [References](#References)
 8. [Appendix A: Maps and Charts](#appendix-a-maps-and-charts)
-<!--9. [Appendix B: Data Sources and Documentation](#appendix-b-data-sources-and-documentation)-->
+9. [Appendix B: Data Documentation](#appendix-b-data-documentation)
 
 ## Introduction
 
@@ -132,6 +132,6 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 **Figure 11:**
 ![Figure 11](./img/Mekong_Basin_Harmony_01.png)
 
-<!--## Appendix B: Data Sources and Documentation-->
+## Appendix B: Data Documentation
 
 
