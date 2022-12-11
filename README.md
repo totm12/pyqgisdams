@@ -64,7 +64,7 @@ For this project the harmonization between two regionally independent datasets, 
 
 *Figure 4: Showing buffering proximities at increasing increments of 0.5km within the Outaouais Basin*
 
-![Figure 5](.img/Mekong_varying_buffer.png)
+![Figure 5](./img/Mekong_varying_buffer.png)
 
 *Figure 5: Showing buffering proximities at increasing increments of 0.5km within the Mekong Basin*
 
