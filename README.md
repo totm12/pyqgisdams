@@ -148,15 +148,15 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 
 >Wang, J., Walter, B. A., Yao, F., Song, C., Ding, M., Maroof, A. S., Zhu, J., Fan, C., McAlister, J. M., Sikder, M. S., Sheng, Y., Allen, G. H., Crétaux, J.-F., & Wada, Y. (2022). GeoDAR: Georeferenced global Dams And Reservoirs dataset for bridging attributes and geolocations [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6163413
 
->HydroBASINS. (n.d.). Retrieved 2022, from https://www.hydrosheds.org/products/hydrobasins
+>HydroBASINS. (n.d.). Retrieved September 25, 2022, from https://www.hydrosheds.org/products/hydrobasins
   
->HydroRIVERS. (n.d.). Retrieved 2022, from https://www.hydrosheds.org/products/hydrorivers
+>HydroRIVERS. (n.d.). Retrieved September 25, 2022, from https://www.hydrosheds.org/products/hydrorivers
 
->Ontario Dam Inventory. (n.d.). Retrieved 2022, from https://geohub.lio.gov.on.ca/maps/mnrf::ontario-dam-inventory
+>Ontario Dam Inventory. (n.d.). Retrieved September 25, 2022, from https://geohub.lio.gov.on.ca/maps/mnrf::ontario-dam-inventory
 
->Open Ottawa. (n.d.). Retrieved 2022, from https://open.ottawa.ca/
+>Open Ottawa. (n.d.). Retrieved September 25, 2022, from https://open.ottawa.ca/
 
->RVCA GIS Maps. (n.d.). Retrieved 2022, from https://gis.rvca.ca/
+>RVCA GIS Maps. (n.d.). Retrieved September 25, 2022, from https://gis.rvca.ca/
 
   
 
