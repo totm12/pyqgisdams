@@ -11,12 +11,9 @@
 ## Running Script
 1. Open QGIS.
 2. Open Python pane, see Figure 2.
-3. 
 ![Figure 1](./img/qgis_py0.PNG)
 3. Select the open script button.
-4. 
 ![Figure 1](./img/qgis_py1.PNG)
-
 ![Figure 1](./img/qgis_py2.PNG)
 4. A file prompt will open and then navigate to the directory where you downloaded 'dam_qgis.py' and select it and hit 'Open'.
 5. Change inputs (Lines 85-89) to match your directory path.
