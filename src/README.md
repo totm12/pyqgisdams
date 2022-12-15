@@ -11,8 +11,11 @@
 ## Running Script
 1. Open QGIS.
 2. Open Python pane, as shown in Figure 1.
+
 ![Figure 1](/img/qgis_py0.PNG)
+
 *Figure 1: Opening Python pane QGIS.*
+
 3. Select the open script button, as shown below in Figures 2-3.
 
 ![Figure 2](/img/qgis_py1.PNG)
