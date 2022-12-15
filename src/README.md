@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-## Prerequisites
+## Prerequisites (See Appendix B for data links)
 * GeoDAR Dams and Reservoirs shapefile 
 * Regional dams shapefile (for the area you intend to test in)
 * Hydrorivers shapefile 
