@@ -6,3 +6,6 @@
 * Hydrorivers shapefile 
 * Hydrobasins shapefile clipped to the regional basin of the reginal dams (see above)
 * QGIS (V3.4 or greater)
+* UTM zone of the regional dams
+
+## Running Script
