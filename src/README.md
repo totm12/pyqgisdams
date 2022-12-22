@@ -4,7 +4,7 @@
 * GeoDAR Dams and Reservoirs shapefile 
 * Regional dams shapefile (for the area you intend to test in)
 * Hydrorivers shapefile 
-* Hydrobasins shapefile clipped to the regional basin of the reginal dams (see above)
+* Hydrobasins shapefile clipped to the regional basin of the regional dams (see above)
 * QGIS (V3.4 or greater)
 * UTM zone of the regional dams
 
