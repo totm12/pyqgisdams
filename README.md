@@ -144,6 +144,15 @@ Exchange. Available: https://datascience.stackexchange.com/q/10063. [Accessed: 2
 **Figure 11:**
 ![Figure 11](./img/Mekong_Basin_Harmony_01.png)
 
+**Figure 12:**
+![Figure 12](./img/Salween_Basin_01.png)
+
+**Figure 13**
+![Figure 13](./img/Salween_Basin_Harmony_01.png)
+
+**Figure 14**
+![Figure 14](./img/salween_varying_buffer.png)
+
 ## Appendix B: Data Documentation
 
 >Wang, J., Walter, B. A., Yao, F., Song, C., Ding, M., Maroof, A. S., Zhu, J., Fan, C., McAlister, J. M., Sikder, M. S., Sheng, Y., Allen, G. H., Crétaux, J.-F., & Wada, Y. (2022). GeoDAR: Georeferenced global Dams And Reservoirs dataset for bridging attributes and geolocations [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6163413
