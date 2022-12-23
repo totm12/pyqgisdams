@@ -29,4 +29,8 @@
 4. A file prompt will open and then navigate to the directory where you downloaded 'dam_qgis.py' and select it and hit 'Open'.
 5. Change inputs (Lines 85-89) to match your directory path.
 6. Change reproject UTM zone (Lines 103-106) to match the UTM of your regional dams.
-7. Click run button and wait.
+7. Click run button and wait for the script to complete, when finished a console output will be displayed, as shown in Figure 4.
+
+![Figure 4](/img/Script_output.PNG)
+
+*Figure 4: Showing the completed script output.*
