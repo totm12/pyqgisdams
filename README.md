@@ -5,6 +5,8 @@ in partnership with United Nations University Professor Dr. Charlotte Macalister
 purposes. The provided GeoDAR v1.1 is proprietary data whose distribution is prohibited and whose accuracy is independent of the study. Datasets such as
 HydroSHEDS, Ontario Dam Inventory and subsequent map layers are not produced by the study, and as a result the findings pertain to the geospatial constraints of the datasets. Accurate up to date data may not all be available to the general public.
 
+(./img/cu_logo.png)
+
 ## Table of Contents
 
 0. [Repository Structure](#repository-structure)
